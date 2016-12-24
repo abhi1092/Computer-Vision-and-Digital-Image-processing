@@ -1,8 +1,8 @@
-Steps of climbing: 5
+Steps of climbing: 3
 Random Restart required: 1
 final State:
- 1  4  2  0 
+ 3  1  4  2 
+|_||_||_||_|
+|_||Q||_||_|
 |_||_||_||Q|
 |Q||_||_||_|
-|_||_||Q||_|
-|_||_||_||_|

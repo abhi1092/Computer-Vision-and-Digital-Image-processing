@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1476340116 source:c:\users\xcell-admin\desktop\intelligent_system\8_puzzle\n-queen\main.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-
