@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1474317723 source:c:\users\xcell-admin\desktop\intelligent_system\8_puzzle\8_puzzle\main.c
+	<stdio.h>
+	<stdlib.h>
+
