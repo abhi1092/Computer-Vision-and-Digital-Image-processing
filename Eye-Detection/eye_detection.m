@@ -1,15 +1,8 @@
-% Please edit this function only, and submit this Matlab file in a zip file
-% along with your PDF report
-
 function [left_x, right_x, left_y, right_y] = eye_detection(img)
 % INPUT: RGB image
 % OUTPUT: x and y coordinates of left and right eye.
-% Please rewrite this function, and submit this file in Moodle (in a zip file with the report). 
-
 
 currentimg=img; %capture the image of interest
-
-
 
 %Read the image
 VidImage = currentimg;
@@ -38,14 +31,12 @@ diff = size(l,1);
 diff = diff * 0.4;
 l = l(round(end*0.4):end,:);
 
-
 %Crop the low intensity areas
 for i = 1:size(l,2)/2
     if sum(l(:,i)) < 0.85*max(sum(l))
         l(:,i) = 255;
     end
 end
-
 
 for i = size(l,2):-1:size(l,2)/2
     if sum(l(:,i)) < 0.85*max(sum(l))
@@ -63,6 +54,7 @@ for i = 1:size(l,1)
         end
     end
 end
+
 %Calculate intensity
 col = sum(l);
 
@@ -81,9 +73,7 @@ for i = round(size(col,2)/2):-1:1
     if f==1 && col(i) == 0
         y(2) = i;
         f = 2;
-    end
-    
-    
+    end   
 end
 
 y1 = (y(1)+y(2))/2;
@@ -96,18 +86,12 @@ for i = round(size(col,2)/2):1:size(col,2)
     if f == 1 && col(i) == 0
         y(2) = i;
         f = 2;
-    end
-    
-    
+    end    
 end
 
 y2 = (y(1)+y(2))/2;
 
-
-
-
-
-
+%Output the co-ordinates
 left_x = y1;
 right_x = y2;
 left_y = x;
