@@ -1,4 +1,4 @@
-function patch = poke_patch(img)
+function patch = Pokemon_patch_extraction(img)
 [R, C, ~] = size(img);
    
     start_row = ceil(0.15*R);
